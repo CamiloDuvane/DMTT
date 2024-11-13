@@ -181,7 +181,7 @@ body {
     <div class="nav-links">
       <a href="https://camiloduvane.github.io/Orgranograma/">Organograma</a>
       <a href="https://camiloduvane.github.io/Receitas/">Receita</a>
-      <a href="https://dmtt.gov.br/noticias">Notícias</a>
+      <a href="https://camiloduvane.github.io/Funcionarios/">Funcionarios</a>
       <a href="https://dmtt.gov.br/sobre">Sobre</a>
       <a href="https://dmtt.gov.br/contato">Contato</a>
     </div>
