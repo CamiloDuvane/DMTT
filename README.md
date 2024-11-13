@@ -1,4 +1,4 @@
-<html><head><base href="https://dmtt.gov.br/"><title>DMTT - Direção Municipal de Transportes e Trânsito</title><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<html><head><base href="https://camiloduvane.github.io/DMTT/"><title>DMTT - Direção Municipal de Transportes e Trânsito</title><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 :root {
   --primary: #1a4b8c;
@@ -179,8 +179,8 @@ body {
 <header class="header">
   <nav class="nav">
     <div class="nav-links">
-      <a href="https://dmtt.gov.br/organograma">Organograma</a>
-      <a href="https://dmtt.gov.br/receita">Receita</a>
+      <a href="https://camiloduvane.github.io/Orgranograma/">Organograma</a>
+      <a href="https://camiloduvane.github.io/Receitas/">Receita</a>
       <a href="https://dmtt.gov.br/noticias">Notícias</a>
       <a href="https://dmtt.gov.br/sobre">Sobre</a>
       <a href="https://dmtt.gov.br/contato">Contato</a>
