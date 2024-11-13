@@ -188,7 +188,7 @@ body {
     <div class="logo">
       <div class="logo-text">DMTT</div>
       <div class="logo-image">
-        <img alt="Logo DMTT - Direção Municipal de Transportes e Trânsito" src="logo.png" width="60" height="60">
+        <img alt="Logo DMTT - Direção Municipal de Transportes e Trânsito" src="DMTT.bmp" width="60" height="60">
       </div>
     </div>
   </nav>
