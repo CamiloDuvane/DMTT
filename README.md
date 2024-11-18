@@ -67,6 +67,7 @@ body {
 .nav-links {
   display: flex;
   gap: 2rem;
+  position: relative;
 }
 
 .nav-links a {
@@ -75,8 +76,38 @@ body {
   transition: color 0.3s;
 }
 
-.nav-links a:hover {
-  color: var(--secondary);
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--primary);
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 4px;
+  top: 100%;
+  right: 0;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  white-space: pre-wrap;
+  font-family: 'Courier New', monospace;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: var(--gray);
 }
 
 .hero {
@@ -157,6 +188,80 @@ body {
   text-decoration: none;
 }
 
+.search-container {
+  margin: 20px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.search-container input,
+.search-container select {
+  padding: 8px;
+  border: 1px solid var(--gray);
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+#employeeTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  background: white;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+#employeeTable th,
+#employeeTable td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+#employeeTable th {
+  background-color: var(--primary);
+  color: white;
+  font-weight: bold;
+}
+
+.employee-photo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.status-activo {
+  color: #28a745;
+  background: #d4edda;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.status-inativo {
+  color: #dc3545;
+  background: #f8d7da;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.status-deferias {
+  color: #ffc107;
+  background: #fff3cd;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.status-destacado {
+  color: #17a2b8;
+  background: #d1ecf1;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.employee-section {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .nav {
     flex-direction: column;
@@ -181,9 +286,21 @@ body {
     <div class="nav-links">
       <a href="https://camiloduvane.github.io/Orgranograma/">Organograma</a>
       <a href="https://camiloduvane.github.io/Receitas/">Receita</a>
-      <a href="https://camiloduvane.github.io/Funcionarios/">Funcionarios</a>
+      <a href="#" id="funcionariosLink">Funcionarios</a>
       <a href="https://camiloduvane.github.io/Relatorio/">Relatório</a>
       <a href="https://dmtt.gov.br/contato">Contato</a>
+      <div class="dropdown">
+        <a href="#" style="cursor: pointer;">Mais</a>
+        <div class="dropdown-content">
+          <a href="https://dmtt.gov.br/servicos">Serviços</a>
+          <a href="https://dmtt.gov.br/projetos">Projetos</a>
+          <a href="https://dmtt.gov.br/documentos">Documentos</a>
+          <a href="https://dmtt.gov.br/legislacao">Legislação</a>
+          <a href="https://dmtt.gov.br/codigo" style="border-top: 1px solid rgba(255,255,255,0.1);">
+            Código de Trânsito
+          </a>
+        </div>
+      </div>
     </div>
     <div class="logo">
       <div class="logo-text">DMTT</div>
@@ -243,6 +360,49 @@ body {
   </div>
 </section>
 
+<div id="employeeSection" class="employee-section">
+  <div class="search-container">
+    <input type="text" id="nameSearch" placeholder="Pesquisar por nome...">
+    <select id="departmentSearch">
+        <option value="">Todos os Departamentos</option>
+        <option value="VMTT">VMTT</option>
+        <option value="DMTT">DMTT</option>
+        <option value="DARHF">DARHF</option>
+        <option value="DOT">DOT</option>
+        <option value="DTP">DTP</option>
+        <option value="Fiscalização">Fiscalização</option>
+        <option value="Licenciamento">Licenciamento</option>
+        <option value="Secretaria">Secretaria</option>
+        <option value="BRT">BRT</option>
+    </select>
+    <select id="statusSearch">
+        <option value="">Todos os Status</option>
+        <option value="Activo">Activo</option>
+        <option value="Inativo">Inativo</option>
+        <option value="De Férias">De Férias</option>
+        <option value="Destacado">Destacado</option>
+    </select>
+  </div>
+
+  <table id="employeeTable">
+    <thead>
+        <tr>
+            <th>N/o</th>
+            <th>Foto</th>
+            <th>Nome</th>
+            <th>Cargo de Chefia</th>
+            <th>Categoria</th>
+            <th>Formação</th>
+            <th>Locação</th>
+            <th>Departamento</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody id="employeeTableBody">
+    </tbody>
+  </table>
+</div>
+
 <footer class="footer">
   <p>© 2024 Direção Municipal de Transportes e Trânsito - Todos os direitos reservados</p>
   <div class="social-links">
@@ -269,6 +429,96 @@ const menuItems = document.querySelectorAll('.nav-links a');
 menuItems.forEach(link => {
   if(link.href === currentLocation) {
     link.classList.add('active');
+  }
+});
+
+// Employee data array
+let employees = [
+    { id: 1, name: 'João Silva', role: 'Diretor', category: 'Executive', education: 'Mestrado', location: 'Escritório Central', department: 'DMTT', status: 'Activo', photo: '#007bff' },
+    { id: 2, name: 'Maria Souza', role: 'Gerente de Trânsito', category: 'Management', education: 'Graduação', location: 'Escritório Central', department: 'VMTT', status: 'Activo', photo: '#28a745' },
+    { id: 3, name: 'Carlos Mendes', role: 'Analista', category: 'Staff', education: 'Técnico', location: 'Setor de Licenciamento', department: 'Licenciamento', status: 'Inativo', photo: '#dc3545' },
+    { id: 4, name: 'Ana Costa', role: 'Coordenador', category: 'Management', education: 'Graduação', location: 'Fiscalização', department: 'Fiscalização', status: 'De Férias', photo: '#ffc107' },
+    { id: 5, name: 'Lucas Pereira', role: 'Assistente', category: 'Staff', education: 'Pós-graduação', location: 'Setor de Educação', department: 'Educação', status: 'Destacado', photo: '#17a2b8' }
+];
+
+function renderEmployees() {
+    const tbody = document.getElementById('employeeTableBody');
+    tbody.innerHTML = '';
+    
+    employees.forEach(emp => {
+        const row = document.createElement('tr');
+        const statusClass = `status-${emp.status?.toLowerCase().replace(' ', '') || 'activo'}`;
+        row.innerHTML = `
+            <td>${emp.id}</td>
+            <td><svg class="employee-photo" viewBox="0 0 50 50">
+                <circle cx="25" cy="25" r="20" fill="${emp.photo}"/>
+            </svg></td>
+            <td>${emp.name}</td>
+            <td>${emp.role || '-'}</td>
+            <td>${emp.category || '-'}</td>
+            <td>${emp.education || '-'}</td>
+            <td>${emp.location || '-'}</td>
+            <td>${emp.department || '-'}</td>
+            <td><span class="${statusClass}">${emp.status || 'Activo'}</span></td>
+        `;
+        tbody.appendChild(row);
+    });
+}
+
+function filterTable() {
+    const nameSearch = document.getElementById('nameSearch').value.toLowerCase();
+    const departmentSearch = document.getElementById('departmentSearch').value;
+    const statusSearch = document.getElementById('statusSearch').value;
+    
+    const filteredEmployees = employees.filter(emp => {
+        const nameMatch = emp.name.toLowerCase().includes(nameSearch);
+        const departmentMatch = !departmentSearch || emp.department === departmentSearch;
+        const statusMatch = !statusSearch || emp.status === statusSearch;
+        return nameMatch && departmentMatch && statusMatch;
+    });
+    
+    const tbody = document.getElementById('employeeTableBody');
+    tbody.innerHTML = '';
+    
+    filteredEmployees.forEach(emp => {
+        const row = document.createElement('tr');
+        const statusClass = `status-${emp.status?.toLowerCase().replace(' ', '') || 'activo'}`;
+        row.innerHTML = `
+            <td>${emp.id}</td>
+            <td><svg class="employee-photo" viewBox="0 0 50 50">
+                <circle cx="25" cy="25" r="20" fill="${emp.photo}"/>
+            </svg></td>
+            <td>${emp.name}</td>
+            <td>${emp.role || '-'}</td>
+            <td>${emp.category || '-'}</td>
+            <td>${emp.education || '-'}</td>
+            <td>${emp.location || '-'}</td>
+            <td>${emp.department || '-'}</td>
+            <td><span class="${statusClass}">${emp.status || 'Activo'}</span></td>
+        `;
+        tbody.appendChild(row);
+    });
+}
+
+document.getElementById('nameSearch').addEventListener('input', filterTable);
+document.getElementById('departmentSearch').addEventListener('change', filterTable);
+document.getElementById('statusSearch').addEventListener('change', filterTable);
+
+// Initial render
+renderEmployees();
+
+// Modify the funcionariosLink event listener
+document.getElementById('funcionariosLink').addEventListener('click', function(e) {
+  e.preventDefault();
+  const employeeSection = document.getElementById('employeeSection');
+  
+  // Toggle visibility
+  if (employeeSection.style.display === 'block') {
+    employeeSection.style.display = 'none';
+  } else {
+    employeeSection.style.display = 'block';
+    // Scroll to employee section
+    employeeSection.scrollIntoView({ behavior: 'smooth' });
   }
 });
 </script>
