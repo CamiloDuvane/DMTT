@@ -239,6 +239,70 @@ body {
   background: var(--dark);
 }
 
+.filters {
+  display: flex;
+  gap: 1rem;
+  margin: 2rem auto;
+  max-width: 1200px;
+  padding: 0 1rem;
+}
+
+.filters input,
+.filters select {
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.filters input {
+  flex: 1;
+}
+
+.employee-count {
+  max-width: 1200px;
+  margin: 1rem auto;
+  padding: 0 1rem;
+  font-weight: bold;
+  color: var(--primary);
+  font-size: 1.1em;
+}
+
+.employee-list {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.employee-item {
+  background: white;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.employee-header {
+  padding: 1rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.employee-header:hover {
+  background: #f5f5f5;
+}
+
+.employee-details {
+  display: none;
+  padding: 1rem;
+  border-top: 1px solid #eee;
+}
+
+.employee-details.active {
+  display: block;
+}
+
 .employee-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -315,8 +379,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 50px;
-  padding: 80px 20px 40px 20px;
+  gap: 30px; /* Reduce vertical gap between levels */
+  padding: 60px 20px 30px 20px; /* Reduce top/bottom padding */
   max-width: 1400px;
   margin: 0 auto;
 }
@@ -324,7 +388,7 @@ body {
 .level {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 15px; /* Reduce horizontal gap between boxes */
   justify-content: center;
   padding: 0 20px;
 }
@@ -332,11 +396,11 @@ body {
 .level::after {
   content: '';
   position: absolute;
-  bottom: -25px;
+  bottom: -15px; /* Reduce vertical connector height */
   left: 50%;
   transform: translateX(-50%);
   width: 2px;
-  height: 25px;
+  height: 15px;
   background: rgba(0,0,0,0.1);
 }
 
@@ -347,8 +411,8 @@ body {
 .box {
   background: white;
   border-radius: 20px;
-  padding: 25px;
-  width: 200px; /* Slightly smaller to fit more boxes */
+  padding: 15px; /* Reduce padding */
+  width: 180px; /* Make boxes slightly smaller */
   text-align: center;
   box-shadow: 0 15px 30px rgba(0,0,0,0.1);
   transition: all 0.3s ease;
@@ -361,27 +425,27 @@ body {
 }
 
 .avatar {
-  width: 100px;
-  height: 100px;
+  width: 80px; /* Make avatars smaller */
+  height: 80px;
   border-radius: 50%;
-  margin: 0 auto 15px;
+  margin: 0 auto 10px;
   overflow: hidden;
   border: 4px solid #4CAF50;
   box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
 .name {
-  font-size: 1.2em;
+  font-size: 1.1em; /* Slightly smaller font */
   font-weight: 600;
   color: #2c3e50;
-  margin-bottom: 8px;
+  margin-bottom: 5px;
 }
 
 .position {
-  font-size: 1em;
+  font-size: 0.9em; /* Slightly smaller font */
   color: #4CAF50;
   font-weight: 500;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
 }
 
 .contact-info {
@@ -402,7 +466,7 @@ body {
       <a href="https://camiloduvane.github.io/Orgranograma/">Organograma</a>
       <a href="https://camiloduvane.github.io/Receitas/">Receita</a>
       <a href="https://camiloduvane.github.io/Funcionarios/">Funcionarios</a>
-      <a href="https://camiloduvane.github.io/Relatorio/">Relatório</a>
+      <a href="https://camiloduvane.github.io/Relatorio/">Colectivo</a>
       <a href="https://dmtt.gov.br/contato">Contato</a>
       <div class="dropdown">
         <a href="javascript:void(0)" style="cursor: pointer;">Mais</a>
@@ -477,99 +541,28 @@ body {
 
 <div id="employeeSection" class="employee-section">
   <button class="back-button" onclick="hideEmployees()">← Voltar</button>
-  <div class="employee-grid">
-    <div class="employee-card">
-      <img alt="Foto do funcionário João Silva" src="employee1.jpg" width="100" height="100">
-      <div class="employee-info">
-        <h3>João Silva</h3>
-        <div class="info-row">
-          <span class="info-label">Cargo de Chefia:</span>
-          <span>Diretor de Trânsito</span>
-        </div>
-        <div class="info-row">
-          <span class="info-label">Categoria:</span>
-          <span>Diretor N1</span>
-        </div>
-        <div class="info-row">
-          <span class="info-label">Formação:</span>
-          <span>Engenharia Civil</span>
-        </div>
-        <div class="info-row">
-          <span class="info-label">Locação:</span>
-          <span>Sede Central</span>
-        </div>
-        <div class="info-row">
-          <span class="info-label">Departamento:</span>
-          <span>Diretoria de Trânsito</span>
-        </div>
-        <div class="info-row">
-          <span class="info-label">Status:</span>
-          <span class="status-active">Ativo</span>
-        </div>
-      </div>
-    </div>
+  
+  <div class="filters">
+    <input type="text" id="nameFilter" placeholder="Filtrar por nome...">
+    <select id="departmentFilter">
+      <option value="">Todos os Departamentos</option>
+      <option value="Diretoria de Trânsito">Diretoria de Trânsito</option>
+      <option value="Coordenação de Projetos">Coordenação de Projetos</option>
+      <option value="Supervisão Operacional">Supervisão Operacional</option>
+    </select>
+    <select id="statusFilter">
+      <option value="">Todos os Status</option>
+      <option value="Ativo">Ativo</option>
+      <option value="Inativo">Inativo</option>
+    </select>
+  </div>
 
-    <div class="employee-card">
-      <img alt="Foto da funcionária Maria Santos" src="employee2.jpg" width="100" height="100">
-      <div class="employee-info">
-        <h3>Maria Santos</h3>
-        <div class="info-row">
-          <span class="info-label">Cargo de Chefia:</span>
-          <span>Coordenadora de Projetos</span>
-        </div>
-        <div class="info-row">
-          <span class="info-label">Categoria:</span>
-          <span>Coordenador N2</span>
-        </div>
-        <div class="info-row">
-          <span class="info-label">Formação:</span>
-          <span>Arquitetura e Urbanismo</span>
-        </div>
-        <div class="info-row">
-          <span class="info-label">Locação:</span>
-          <span>Núcleo de Projetos</span>
-        </div>
-        <div class="info-row">
-          <span class="info-label">Departamento:</span>
-          <span>Coordenação de Projetos</span>
-        </div>
-        <div class="info-row">
-          <span class="info-label">Status:</span>
-          <span class="status-active">Ativo</span>
-        </div>
-      </div>
-    </div>
+  <div class="employee-count">
+    Total de Funcionários: <span id="employeeCount">0</span>
+  </div>
 
-    <div class="employee-card">
-      <img alt="Foto do funcionário Pedro Oliveira" src="employee3.jpg" width="100" height="100">
-      <div class="employee-info">
-        <h3>Pedro Oliveira</h3>
-        <div class="info-row">
-          <span class="info-label">Cargo de Chefia:</span>
-          <span>Supervisor de Operações</span>
-        </div>
-        <div class="info-row">
-          <span class="info-label">Categoria:</span>
-          <span>Supervisor N3</span>
-        </div>
-        <div class="info-row">
-          <span class="info-label">Formação:</span>
-          <span>Engenharia de Transportes</span>
-        </div>
-        <div class="info-row">
-          <span class="info-label">Locação:</span>
-          <span>Centro de Operações</span>
-        </div>
-        <div class="info-row">
-          <span class="info-label">Departamento:</span>
-          <span>Supervisão Operacional</span>
-        </div>
-        <div class="info-row">
-          <span class="info-label">Status:</span>
-          <span class="status-active">Ativo</span>
-        </div>
-      </div>
-    </div>
+  <div class="employee-list">
+    <!-- Employee items will be generated by JavaScript -->
   </div>
 </div>
 
@@ -753,6 +746,118 @@ function showDetails(element) {
   const contactInfo = element.querySelector('.contact-info');
   contactInfo.style.display = contactInfo.style.display === 'block' ? 'none' : 'block';
 }
+
+// Add this to your existing JavaScript
+const employees = [
+  {
+    id: 1,
+    name: 'João Silva',
+    photo: 'employee1.jpg',
+    position: 'Diretor de Trânsito',
+    category: 'Diretor N1',
+    education: 'Engenharia Civil',
+    location: 'Sede Central',
+    department: 'Diretoria de Trânsito',
+    status: 'Ativo'
+  },
+  {
+    id: 2,
+    name: 'Maria Santos',
+    photo: 'employee2.jpg',
+    position: 'Coordenadora de Projetos',
+    category: 'Coordenador N2',
+    education: 'Arquitetura e Urbanismo',
+    location: 'Núcleo de Projetos',
+    department: 'Coordenação de Projetos',
+    status: 'Ativo'
+  },
+  {
+    id: 3,
+    name: 'Pedro Oliveira',
+    photo: 'employee3.jpg',
+    position: 'Supervisor de Operações',
+    category: 'Supervisor N3',
+    education: 'Engenharia de Transportes',
+    location: 'Centro de Operações',
+    department: 'Supervisão Operacional',
+    status: 'Ativo'
+  }
+];
+
+function renderEmployees(filteredEmployees = employees) {
+  const employeeList = document.querySelector('.employee-list');
+  // Update employee count
+  document.getElementById('employeeCount').textContent = filteredEmployees.length;
+  
+  employeeList.innerHTML = filteredEmployees.map(emp => `
+    <div class="employee-item">
+      <div class="employee-header" onclick="toggleDetails(${emp.id})">
+        <span>${emp.name}</span>
+        <span>${emp.department}</span>
+      </div>
+      <div class="employee-details" id="details-${emp.id}">
+        <div class="employee-card">
+          <img alt="Foto do funcionário ${emp.name}" src="${emp.photo}" width="100" height="100">
+          <div class="employee-info">
+            <h3>${emp.name}</h3>
+            <div class="info-row">
+              <span class="info-label">Cargo de Chefia:</span>
+              <span>${emp.position}</span>
+            </div>
+            <div class="info-row">
+              <span class="info-label">Categoria:</span>
+              <span>${emp.category}</span>
+            </div>
+            <div class="info-row">
+              <span class="info-label">Formação:</span>
+              <span>${emp.education}</span>
+            </div>
+            <div class="info-row">
+              <span class="info-label">Locação:</span>
+              <span>${emp.location}</span>
+            </div>
+            <div class="info-row">
+              <span class="info-label">Departamento:</span>
+              <span>${emp.department}</span>
+            </div>
+            <div class="info-row">
+              <span class="info-label">Status:</span>
+              <span class="status-active">${emp.status}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  `).join('');
+}
+
+function toggleDetails(id) {
+  const details = document.getElementById(`details-${id}`);
+  details.classList.toggle('active');
+}
+
+function filterEmployees() {
+  const nameFilter = document.getElementById('nameFilter').value.toLowerCase();
+  const departmentFilter = document.getElementById('departmentFilter').value;
+  const statusFilter = document.getElementById('statusFilter').value;
+
+  const filtered = employees.filter(emp => {
+    const matchName = emp.name.toLowerCase().includes(nameFilter);
+    const matchDepartment = !departmentFilter || emp.department === departmentFilter;
+    const matchStatus = !statusFilter || emp.status === statusFilter;
+    return matchName && matchDepartment && matchStatus;
+  });
+
+  renderEmployees(filtered);
+}
+
+// Add event listeners for filters
+document.getElementById('nameFilter').addEventListener('input', filterEmployees);
+document.getElementById('departmentFilter').addEventListener('change', filterEmployees);
+document.getElementById('statusFilter').addEventListener('change', filterEmployees);
+
+// Initial render
+renderEmployees();
 </script>
 
 </body></html>
