@@ -751,34 +751,34 @@ function showDetails(element) {
 const employees = [
   {
     id: 1,
-    name: 'João Silva',
-    photo: 'employee1.jpg',
-    position: 'Diretor de Trânsito',
+    name: 'Fernando Uache',
+    photo: 'fernandouache.jpg',
+    position: 'Vereador',
     category: 'Diretor N1',
     education: 'Engenharia Civil',
     location: 'Sede Central',
-    department: 'Diretoria de Trânsito',
+    department: 'Vereação',
     status: 'Ativo'
   },
   {
     id: 2,
-    name: 'Maria Santos',
-    photo: 'employee2.jpg',
-    position: 'Coordenadora de Projetos',
-    category: 'Coordenador N2',
+    name: 'Nelson Gustavo Massango',
+    photo: 'nelsongustavomassango.jpg',
+    position: 'Director',
+    category: 'Estatística] N2',
     education: 'Arquitetura e Urbanismo',
     location: 'Núcleo de Projetos',
-    department: 'Coordenação de Projetos',
+    department: 'Direcção',
     status: 'Ativo'
   },
   {
     id: 3,
-    name: 'Pedro Oliveira',
-    photo: 'employee3.jpg',
+    name: 'Camilo William Duvane',
+    photo: 'camiloduvane.jpg',
     position: 'Supervisor de Operações',
     category: 'Supervisor N3',
     education: 'Engenharia de Transportes',
-    location: 'Centro de Operações',
+    location: 'DARG',
     department: 'Supervisão Operacional',
     status: 'Ativo'
   }
