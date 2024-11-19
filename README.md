@@ -583,11 +583,11 @@ body {
         <div class="avatar">
           <img src="vereador.jpg" alt="Vereador">
         </div>
-        <div class="name">Vereador</div>
-        <div class="position">Presidente da Câmara</div>
+        <div class="name">Fernando Uache</div>
+        <div class="position">Vereador</div>
         <div class="contact-info" style="display: none;">
           <p>Email: vereador@example.com</p>
-          <p>Telefone: (11) 1234-5678</p>
+          <p>Telefone: (+258) 1234-5678</p>
         </div>
       </div>
     </div>
@@ -597,11 +597,11 @@ body {
         <div class="avatar">
           <img src="diretor1.jpg" alt="Diretor 1">
         </div>
-        <div class="name">Diretor 1</div>
-        <div class="position">Diretor de Trânsito</div>
+        <div class="name">Nelson Gustavo Massango</div>
+        <div class="position">Diretor Municipal de Transportes e Trânsito</div>
         <div class="contact-info" style="display: none;">
           <p>Email: diretor1@example.com</p>
-          <p>Telefone: (11) 2345-6789</p>
+          <p>Telefone: (+258) 2345-6789</p>
         </div>
       </div>
       <div class="box">
