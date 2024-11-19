@@ -766,7 +766,7 @@ const employees = [
     photo: 'nelsongustavomassango.jpg',
     position: 'Director',
     category: 'Técnico Suprior N1',
-    education: 'Estatistica',
+    education: 'Estatística',
     location: 'Direcção',
     department: 'Direcção',
     status: 'Ativo'
@@ -784,15 +784,40 @@ const employees = [
   },
   {
     id: 4,
-    name: 'Carlos ',
+    name: 'Carlos Vilanculos',
     photo: 'camiloduvane.jpg',
-    position: 'Técnico',
-    category: 'Supervisor N2',
+    position: 'Chefe de Departamento',
+    category: 'Supervisor N1',
     education: 'Contabilidade e Auditoria',
     location: 'DARHF',
     department: 'Departamento de Administração e Recursos Humanos',
     status: 'Ativo'
   },
+{
+    id: 5,
+    name: 'José Chiau',
+    photo: 'camiloduvane.jpg',
+    position: 'Chefe da Secretaria',
+    category: 'Supervisor N1',
+    education: 'Administração Pública',
+    location: 'Secretaria',
+    department: 'Departamento de Administração e Recursos Humanos',
+    status: 'Ativo'
+  },
+{
+    id: 6,
+    name: 'José Chiau',
+    photo: 'camiloduvane.jpg',
+    position: 'Chefe da Secretaria',
+    category: 'Supervisor N1',
+    education: 'Administração Pública',
+    location: 'Secretaria',
+    department: 'Departamento de Administração e Recursos Humanos',
+    status: 'Ativo'
+  },
+
+
+  
 ];
 
 function renderEmployees(filteredEmployees = employees) {
