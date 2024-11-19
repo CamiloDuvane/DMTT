@@ -754,8 +754,8 @@ const employees = [
     name: 'Fernando Uache',
     photo: 'fernandouache.jpg',
     position: 'Vereador',
-    category: 'Diretor N1',
-    education: 'Engenharia Civil',
+    category: 'Técnico Superior N1',
+    education: '...Por preencher...',
     location: 'Pacio',
     department: 'Vereação',
     status: 'Ativo'
@@ -773,9 +773,9 @@ const employees = [
   },
   {
     id: 3,
-    name: 'Camilo William Duvane',
+    name: 'Carlos Vilanculos',
     photo: 'camiloduvane.jpg',
-    position: 'Técnico',
+    position: 'Chefe de Departamento',
     category: 'Supervisor N2',
     education: 'Contabilidade e Auditoria',
     location: 'DARHF',
@@ -784,28 +784,50 @@ const employees = [
   },
   {
     id: 4,
-    name: 'Carlos Vilanculos',
+    name: 'Amilton Tembe',
     photo: 'camiloduvane.jpg',
     position: 'Chefe de Departamento',
-    category: 'Supervisor N1',
-    education: 'Contabilidade e Auditoria',
-    location: 'DARHF',
-    department: 'Departamento de Administração e Recursos Humanos',
+    category: 'Ensino Geral',
+    education: 'Técnico',
+    location: 'DL',
+    department: 'Departamento de Licenciamento',
     status: 'Ativo'
   },
 {
     id: 5,
-    name: 'José Chiau',
+    name: 'Vasco Nhaquila',
     photo: 'camiloduvane.jpg',
-    position: 'Chefe da Secretaria',
+    position: 'Chefe de Departamento',
     category: 'Supervisor N1',
     education: 'Administração Pública',
-    location: 'Secretaria',
-    department: 'Departamento de Administração e Recursos Humanos',
+    location: 'DTP',
+    department: 'Departamento de Transportes e Transito',
     status: 'Ativo'
   },
 {
     id: 6,
+    name: 'Baltazar Hilário Nhacumbe',
+    photo: 'camiloduvane.jpg',
+    position: 'Chefe de Departamento',
+    category: 'Supervisor N1',
+    education: 'Administração Pública',
+    location: 'DOT',
+    department: 'Departamento de Operações e Transitio',
+    status: 'Ativo'
+  },
+{
+    id: 7,
+    name: 'Safo Charles Mahumana',
+    photo: 'camiloduvane.jpg',
+    position: 'Chefe de Recepção',
+    category: 'Supervisor N1',
+    education: 'Administração Pública',
+    location: 'DARHF',
+    department: 'Departamento de Administração e Recursos Humanos',
+    status: 'Ativo'
+  },
+  {
+    id: 8,
     name: 'José Chiau',
     photo: 'camiloduvane.jpg',
     position: 'Chefe da Secretaria',
@@ -815,7 +837,50 @@ const employees = [
     department: 'Departamento de Administração e Recursos Humanos',
     status: 'Ativo'
   },
-
+  {
+    id: 9,
+    name: 'Ana Paula Francisco Muchanga',
+    photo: 'camiloduvane.jpg',
+    position: 'Secretaria Executiva',
+    category: 'Técnica Profissional',
+    education: 'Contabilidade',
+    location: 'Pacio',
+    department: 'Vereação',
+    status: 'Ativo'
+  },
+  {
+    id: 10,
+    name: 'Silvia Laurinda Tembe  Machié',
+    photo: 'camiloduvane.jpg',
+    position: 'Secretaria Executiva',
+    category: 'Técnica Profissional',
+    education: 'Administração Pública',
+    location: 'Secretaria',
+    department: 'Departamento de Administração e Recursos Humanos',
+    status: 'Ativo'
+  },
+  {
+    id: 11,
+    name: 'Camilo Wiliamo Duvane',
+    photo: 'camiloduvane.jpg',
+    position: 'Técnico',
+    category: 'Supervisor N1',
+    education: 'Contabilidade e Auditoria',
+    location: 'Direcção',
+    department: 'Departamento de Administração e Recursos Humanos',
+    status: 'Ativo'
+  },
+  {
+    id: 12,
+    name: 'Nome',
+    photo: 'camiloduvane.jpg',
+    position: 'Chefe da Secretaria',
+    category: 'Supervisor N1',
+    education: 'Administração Pública',
+    location: 'Secretaria',
+    department: 'Departamento de Administração e Recursos Humanos',
+    status: 'Ativo'
+  },
 
   
 ];
