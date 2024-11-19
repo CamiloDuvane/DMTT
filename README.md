@@ -608,11 +608,11 @@ body {
         <div class="avatar">
           <img src="diretor2.jpg" alt="Diretor 2">
         </div>
-        <div class="name">Diretor 2</div>
-        <div class="position">Diretor de Projetos</div>
+        <div class="name">Por Nomear</div>
+        <div class="position">Diretor Adjunto</div>
         <div class="contact-info" style="display: none;">
           <p>Email: diretor2@example.com</p>
-          <p>Telefone: (11) 3456-7890</p>
+          <p>Telefone: (+258) 3456-7890</p>
         </div>
       </div>
     </div>
@@ -622,8 +622,8 @@ body {
         <div class="avatar">
           <img src="departamento1.jpg" alt="Departamento 1">
         </div>
-        <div class="name">Departamento 1</div>
-        <div class="position">Coordenador de Trânsito</div>
+        <div class="name">Carlos Vilanculos</div>
+        <div class="position">Departamento de Administração de Recursos Humanos e Finanças</div>
         <div class="contact-info" style="display: none;">
           <p>Email: dep.transito@example.com</p>
           <p>Telefone: (11) 4567-8901</p>
@@ -633,8 +633,8 @@ body {
         <div class="avatar">
           <img src="departamento2.jpg" alt="Departamento 2">
         </div>
-        <div class="name">Departamento 2</div>
-        <div class="position">Coordenador de Projetos</div>
+        <div class="name">DAmilton Tembe</div>
+        <div class="position">Departamento de Licenciamento</div>
         <div class="contact-info" style="display: none;">
           <p>Email: dep.projetos@example.com</p>
           <p>Telefone: (11) 5678-9012</p>
@@ -644,8 +644,8 @@ body {
         <div class="avatar">
           <img src="departamento3.jpg" alt="Departamento 3">
         </div>
-        <div class="name">Departamento 3</div>
-        <div class="position">Coordenador de Operações</div>
+        <div class="name">Vasco Nhaquila</div>
+        <div class="position">Departamento de Transportes Públicos</div>
         <div class="contact-info" style="display: none;">
           <p>Email: dep.operacoes@example.com</p>
           <p>Telefone: (11) 6789-0123</p>
@@ -655,8 +655,8 @@ body {
         <div class="avatar">
           <img src="departamento4.jpg" alt="Departamento 4">
         </div>
-        <div class="name">Departamento 4</div>
-        <div class="position">Coordenador de Fiscalização</div>
+        <div class="name">Baltazar Hilario</div>
+        <div class="position">Departamento de Operações e Transito</div>
         <div class="contact-info" style="display: none;">
           <p>Email: dep.fiscalizacao@example.com</p>
           <p>Telefone: (11) 7890-1234</p>
@@ -666,8 +666,8 @@ body {
         <div class="avatar">
           <img src="departamento5.jpg" alt="Departamento 5">
         </div>
-        <div class="name">Departamento 5</div>
-        <div class="position">Coordenador Administrativo</div>
+        <div class="name">José Chiau</div>
+        <div class="position">Secretaria Geral</div>
         <div class="contact-info" style="display: none;">
           <p>Email: dep.admin@example.com</p>
           <p>Telefone: (11) 8901-2345</p>
