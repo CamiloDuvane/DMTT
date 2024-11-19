@@ -841,7 +841,7 @@ const employees = [
     category: 'Supervisor N1',
     education: 'Administração Pública',
     location: 'Secretaria',
-    department: 'Departamento de Administração e Recursos Humanos',
+    department: 'Secretaria',
     status: 'Ativo'
   },
   {
