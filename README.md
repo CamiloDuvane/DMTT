@@ -546,14 +546,21 @@ body {
     <input type="text" id="nameFilter" placeholder="Filtrar por nome...">
     <select id="departmentFilter">
       <option value="">Todos os Departamentos</option>
-      <option value="Diretoria de Trânsito">Diretoria de Trânsito</option>
-      <option value="Coordenação de Projetos">Coordenação de Projetos</option>
-      <option value="Supervisão Operacional">Supervisão Operacional</option>
+      <option value="Vereação">Diretoria de Trânsito</option>
+      <option value="Direcção">Coordenação de Projetos</option>
+      <option value="DARHF">Supervisão Operacional</option>
+      <option value="DL">Supervisão Operacional</option>
+      <option value="DOT">Supervisão Operacional</option>
+      <option value="DTP">Supervisão Operacional</option>
+      <option value="Secretaria">Supervisão Operacional</option>
     </select>
     <select id="statusFilter">
       <option value="">Todos os Status</option>
       <option value="Ativo">Ativo</option>
       <option value="Inativo">Inativo</option>
+      <option value="Ferias">De Férias</option>
+
+
     </select>
   </div>
 
