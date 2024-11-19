@@ -808,7 +808,7 @@ const employees = [
     category: 'Supervisor N1',
     education: 'Administração Pública',
     location: 'DTP',
-    department: 'Departamento de Transportes e Transito',
+    department: 'Departamento de Transportes Público',
     status: 'Ativo'
   },
 {
