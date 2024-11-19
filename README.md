@@ -546,13 +546,13 @@ body {
     <input type="text" id="nameFilter" placeholder="Filtrar por nome...">
     <select id="departmentFilter">
       <option value="">Todos os Departamentos</option>
-      <option value="Vereação">Diretoria de Trânsito</option>
-      <option value="Direcção">Coordenação de Projetos</option>
-      <option value="DARHF">Supervisão Operacional</option>
-      <option value="DL">Supervisão Operacional</option>
-      <option value="DOT">Supervisão Operacional</option>
-      <option value="DTP">Supervisão Operacional</option>
-      <option value="Secretaria">Supervisão Operacional</option>
+      <option value="Vereação">Vereação</option>
+      <option value="Direcção">Direcção</option>
+      <option value="Departamento de Administração e Recursos Humanos">DARHF</option>
+      <option value="Departamento de Licenciamento">DL</option>
+      <option value="Departamento de Operações e Transitio">DOT</option>
+      <option value="Departamento de Transportes Público">DTP</option>
+      <option value="Secretaria">Secretaria</option>
     </select>
     <select id="statusFilter">
       <option value="">Todos os Status</option>
