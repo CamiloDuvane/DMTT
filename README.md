@@ -466,7 +466,7 @@ body {
       <a href="https://camiloduvane.github.io/Orgranograma/">Organograma</a>
       <a href="https://camiloduvane.github.io/Receitas/">Receita</a>
       <a href="https://camiloduvane.github.io/Funcionarios/">Funcionarios</a>
-      <a href="https://camiloduvane.github.io/Relatorio/">Colectivo</a>
+      <a href="https://camiloduvane.github.io/Colectivo/">Colectivo</a>
       <a href="https://dmtt.gov.br/contato">Contato</a>
       <div class="dropdown">
         <a href="javascript:void(0)" style="cursor: pointer;">Mais</a>
@@ -756,7 +756,7 @@ const employees = [
     position: 'Vereador',
     category: 'Diretor N1',
     education: 'Engenharia Civil',
-    location: 'Sede Central',
+    location: 'Pacio',
     department: 'Vereação',
     status: 'Ativo'
   },
@@ -765,9 +765,9 @@ const employees = [
     name: 'Nelson Gustavo Massango',
     photo: 'nelsongustavomassango.jpg',
     position: 'Director',
-    category: 'Estatística] N2',
-    education: 'Arquitetura e Urbanismo',
-    location: 'Núcleo de Projetos',
+    category: 'Técnico Suprior N1',
+    education: 'Estatistica',
+    location: 'Direcção',
     department: 'Direcção',
     status: 'Ativo'
   },
@@ -775,13 +775,24 @@ const employees = [
     id: 3,
     name: 'Camilo William Duvane',
     photo: 'camiloduvane.jpg',
-    position: 'Supervisor de Operações',
-    category: 'Supervisor N3',
-    education: 'Engenharia de Transportes',
-    location: 'DARG',
-    department: 'Supervisão Operacional',
+    position: 'Técnico',
+    category: 'Supervisor N2',
+    education: 'Contabilidade e Auditoria',
+    location: 'DARHF',
+    department: 'Departamento de Administração e Recursos Humanos',
     status: 'Ativo'
-  }
+  },
+  {
+    id: 4,
+    name: 'Carlos ',
+    photo: 'camiloduvane.jpg',
+    position: 'Técnico',
+    category: 'Supervisor N2',
+    education: 'Contabilidade e Auditoria',
+    location: 'DARHF',
+    department: 'Departamento de Administração e Recursos Humanos',
+    status: 'Ativo'
+  },
 ];
 
 function renderEmployees(filteredEmployees = employees) {
