@@ -521,20 +521,20 @@ body {
   <div class="news-grid">
     <div class="news-card">
       <h3>Novos semáforos inteligentes</h3>
-      <p>DMTT inicia instalação de semáforos com tecnologia adaptativa...</p>
-      <small>10/01/2024</small>
+      <p>DMTT inicia o estudo de instalação de semáforos com tecnologia adaptativa...</p>
+      <small>06/12/2024</small>
     </div>
     
     <div class="news-card">
-      <h3>Campanha Maio Amarelo</h3>
-      <p>Ações de conscientização marcam o início do Maio Amarelo...</p>
-      <small>05/01/2024</small>
+      <h3>Maputo Pedalando</h3>
+      <p>Ações de conscientização marcam o início do Maputo Pedalando...</p>
+      <small>16/11/2024</small>
     </div>
     
     <div class="news-card">
       <h3>Alteração de itinerário</h3>
-      <p>Novas rotas de ônibus entram em vigor a partir do próximo mês...</p>
-      <small>03/01/2024</small>
+      <p>Novas rotas de transportes Semi-Colectivo  entram em vigor a partir do próximo mês...</p>
+      <small>06/12/2024</small>
     </div>
   </div>
 </section>
@@ -634,7 +634,7 @@ body {
         <div class="avatar">
           <img src="departamento2.jpg" alt="Departamento 2">
         </div>
-        <div class="name">DAmilton Tembe</div>
+        <div class="name">Amilton Tembe</div>
         <div class="position">Departamento de Licenciamento</div>
         <div class="contact-info" style="display: none;">
           <p>Email: dep.projetos@example.com</p>
@@ -657,7 +657,7 @@ body {
           <img src="departamento4.jpg" alt="Departamento 4">
         </div>
         <div class="name">Baltazar Hilario</div>
-        <div class="position">Departamento de Operações e Transito</div>
+        <div class="position">Departamento de Operações e Trânsito</div>
         <div class="contact-info" style="display: none;">
           <p>Email: dep.fiscalizacao@example.com</p>
           <p>Telefone: (11) 7890-1234</p>
@@ -668,7 +668,7 @@ body {
           <img src="departamento5.jpg" alt="Departamento 5">
         </div>
         <div class="name">José Chiau</div>
-        <div class="position">Secretaria Geral</div>
+        <div class="position">Secretária Geral</div>
         <div class="contact-info" style="display: none;">
           <p>Email: dep.admin@example.com</p>
           <p>Telefone: (11) 8901-2345</p>
