@@ -966,11 +966,56 @@ const employees = [
     department: 'Departamento de Administração e Recursos Humanos',
     status: 'Ativo'
   },
-
-
-
-
-
+    id: 20,
+    name: 'Mateus Eduardo Mahotas',
+    photo: 'camiloduvane.jpg',
+    position: 'Auxiliar',
+    category: 'Assistente Técnico',
+    education: '10° Classe',
+    location: 'DARHF',
+    department: 'Departamento de Administração e Recursos Humanos',
+    status: 'Ativo'
+  },
+    id: 21,
+    name: 'Omar Momad Omar',
+    photo: 'camiloduvane.jpg',
+    position: 'Auxiliar',
+    category: 'Auxiliar',
+    education: '7° Classe',
+    location: 'DARHF',
+    department: 'Departamento de Administração e Recursos Humanos',
+    status: 'Ativo'
+  },
+    id: 22,
+    name: 'Gilda Francisco Zimba',
+    photo: 'camiloduvane.jpg',
+    position: 'Técnica',
+    category: 'Técnica Supervisores N1',
+    education: 'Gestão de Recursos Humanos',
+    location: 'Fiscalização',
+    department: 'Departamento de Operação e Trânsito',
+    status: 'Ativo'
+  },
+    id: 23,
+    name: 'Amélia Salmina Francisco Nubo',
+    photo: 'camiloduvane.jpg',
+    position: 'Técnica',
+    category: 'Técnica Superior N1',
+    education: 'Gestão de Recursos Humanos',
+    location: 'Secretária',
+    department: 'Departamento de Administração e Recursos Humanos',
+    status: 'Ativo'
+  },
+    id: 24,
+    name: 'Helena Da Clara Tito',
+    photo: 'camiloduvane.jpg',
+    position: 'Técnica',
+    category: 'Técnica Superior N1',
+    education: 'Arquitetura',
+    location: 'DOT',
+    department: 'Departamento de Operação e Trânsito',
+    status: 'Ativo'
+  },
   
 ];
 
