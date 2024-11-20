@@ -552,9 +552,7 @@ body {
       <option value="Departamento de Licenciamento">DL</option>
       <option value="Departamento de Operações e Transitio">DOT</option>
       <option value="Departamento de Transportes Público">DTP</option>
-      <option value="Secretaria">Secretaria</option>  
-      <option
-value="BRT">BRT</option>
+      <option value="Secretaria">Secretaria</option>
     </select>
     <select id="statusFilter">
       <option value="">Todos os Status</option>
@@ -785,8 +783,8 @@ const employees = [
     name: 'Carlos Vilanculos',
     photo: 'camiloduvane.jpg',
     position: 'Chefe de Departamento',
-    category: 'Supervisor N2',
-    education: 'Contabilidade e Auditoria',
+    category: 'Técnico Profissional',
+    education: 'Contabilidade e Finanças',
     location: 'DARHF',
     department: 'Departamento de Administração e Recursos Humanos',
     status: 'Ativo'
@@ -797,7 +795,7 @@ const employees = [
     photo: 'camiloduvane.jpg',
     position: 'Chefe de Departamento',
     category: 'Ensino Geral',
-    education: 'Técnico',
+    education: '12° Classe',
     location: 'DL',
     department: 'Departamento de Licenciamento',
     status: 'Ativo'
@@ -807,7 +805,7 @@ const employees = [
     name: 'Vasco Nhaquila',
     photo: 'camiloduvane.jpg',
     position: 'Chefe de Departamento',
-    category: 'Supervisor N1',
+    category: 'Técnico Supervisor N1',
     education: 'Administração Pública',
     location: 'DTP',
     department: 'Departamento de Transportes Público',
@@ -818,8 +816,8 @@ const employees = [
     name: 'Baltazar Hilário Nhacumbe',
     photo: 'camiloduvane.jpg',
     position: 'Chefe de Departamento',
-    category: 'Supervisor N1',
-    education: 'Administração Pública',
+    category: 'Técnico Profissional',
+    education: 'Eletricidade',
     location: 'DOT',
     department: 'Departamento de Operações e Transitio',
     status: 'Ativo'
@@ -829,8 +827,8 @@ const employees = [
     name: 'Safo Charles Mahumana',
     photo: 'camiloduvane.jpg',
     position: 'Chefe de Recepção',
-    category: 'Supervisor N1',
-    education: 'Administração Pública',
+    category: 'Técnico Supervisor N1',
+    education: 'Gestão e Políticas Públicas',
     location: 'DARHF',
     department: 'Departamento de Administração e Recursos Humanos',
     status: 'Ativo'
@@ -840,7 +838,7 @@ const employees = [
     name: 'José Chiau',
     photo: 'camiloduvane.jpg',
     position: 'Chefe da Secretaria',
-    category: 'Supervisor N1',
+    category: 'Técnico Supervisor N1',
     education: 'Administração Pública',
     location: 'Secretaria',
     department: 'Secretaria',
@@ -852,14 +850,14 @@ const employees = [
     photo: 'camiloduvane.jpg',
     position: 'Secretaria Executiva',
     category: 'Técnica Profissional',
-    education: 'Contabilidade',
+    education: 'Contabilidade e Gestão',
     location: 'Pacio',
     department: 'Vereação',
     status: 'Ativo'
   },
   {
     id: 10,
-    name: 'Silvia Laurinda Tembe  Machié',
+    name: 'Silvia Laurinda Tembe Machié',
     photo: 'camiloduvane.jpg',
     position: 'Secretaria Executiva',
     category: 'Técnica Profissional',
@@ -873,9 +871,9 @@ const employees = [
     name: 'Camilo Wiliamo Duvane',
     photo: 'camiloduvane.jpg',
     position: 'Técnico',
-    category: 'Supervisor N1',
+    category: 'Técnico Supervisor N1',
     education: 'Contabilidade e Auditoria',
-    location: 'Direcção',
+    location: 'DARHF',
     department: 'Departamento de Administração e Recursos Humanos',
     status: 'Ativo'
   },
@@ -884,7 +882,7 @@ const employees = [
     name: 'Loide Atalia da Sílvia Massangaie Castelo David',
     photo: 'camiloduvane.jpg',
     position: 'Directora Adjunta',
-    category: 'Supervisor N1',
+    category: 'Técnica Supervisor N1',
     education: 'Engenharia Civil',
     location: 'Direcção',
     department: 'Direcção',
@@ -896,10 +894,10 @@ const employees = [
     name: 'Obadias José Djedje',
     photo: 'camiloduvane.jpg',
     position: 'Coordenador',
-    category: 'Supervisor N1',
+    category: 'Técnico Supervisor N1',
     education: 'Engenheiro de Transportes',
-    location: 'Secretaria',
-    department: 'Direcção',
+    location: 'BRT',
+    department: 'BRT',
     status: 'Inativo'
   },
 {
@@ -928,13 +926,49 @@ const employees = [
     id: 16,
     name: 'Leonilde da Victoria José Chitofo',
     photo: 'camiloduvane.jpg',
-    position: 'Chefe da Secretaria',
-    category: 'Supervisor N1',
-    education: 'Administração Pública',
-    location: 'Secretaria',
+    position: 'Técnica',
+    category: 'Técnica Supervisor N1',
+    education: 'Contabilidade e Auditoria',
+    location: 'DARHF',
     department: 'Departamento de Administração e Recursos Humanos',
     status: 'Ativo'
   },
+{
+    id: 17,
+    name: 'Felicidade Francisco Macamo',
+    photo: 'camiloduvane.jpg',
+    position: 'Chefe da Secretaria',
+    category: 'Técnica Supervisor N1',
+    education: 'Contabilidade e Auditoria',
+    location: 'DARHF',
+    department: 'Departamento de Administração e Recursos Humanos',
+    status: 'Ativo'
+  },
+{
+    id: 18,
+    name: 'Egimenia Julião Churane',
+    photo: 'camiloduvane.jpg',
+    position: 'Técnica Superior N1',
+    category: 'Técnica Supervisor N1',
+    education: 'Gestão e Políticas Públicas',
+    location: 'DARHF', 
+    department: 'Departamento de Administração e Recursos Humanos',
+    status: 'Inativo'
+  },
+{
+    id: 19,
+    name: 'Henriqueta Muchanga Buque',
+    photo: 'camiloduvane.jpg',
+    position: 'Técnica',
+    category: 'Técnica Profissional',
+    education: 'Contabilidade e Gestão',
+    location: 'DARHF',
+    department: 'Departamento de Administração e Recursos Humanos',
+    status: 'Ativo'
+  },
+
+
+
 
 
   
