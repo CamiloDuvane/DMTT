@@ -966,6 +966,7 @@ const employees = [
     department: 'Departamento de Administração e Recursos Humanos',
     status: 'Ativo'
   },
+  {
     id: 20,
     name: 'Mateus Eduardo Mahotas',
     photo: 'camiloduvane.jpg',
@@ -976,6 +977,7 @@ const employees = [
     department: 'Departamento de Administração e Recursos Humanos',
     status: 'Ativo'
   },
+  {
     id: 21,
     name: 'Omar Momad Omar',
     photo: 'camiloduvane.jpg',
@@ -986,6 +988,7 @@ const employees = [
     department: 'Departamento de Administração e Recursos Humanos',
     status: 'Ativo'
   },
+  {
     id: 22,
     name: 'Gilda Francisco Zimba',
     photo: 'camiloduvane.jpg',
@@ -996,6 +999,7 @@ const employees = [
     department: 'Departamento de Operação e Trânsito',
     status: 'Ativo'
   },
+  {
     id: 23,
     name: 'Amélia Salmina Francisco Nubo',
     photo: 'camiloduvane.jpg',
@@ -1006,6 +1010,7 @@ const employees = [
     department: 'Departamento de Administração e Recursos Humanos',
     status: 'Ativo'
   },
+  {
     id: 24,
     name: 'Helena Da Clara Tito',
     photo: 'camiloduvane.jpg',
@@ -1015,7 +1020,7 @@ const employees = [
     location: 'DOT',
     department: 'Departamento de Operação e Trânsito',
     status: 'Ativo'
-  },
+  }
   
 ];
 
