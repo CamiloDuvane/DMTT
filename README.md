@@ -819,7 +819,7 @@ const employees = [
     category: 'Técnico Profissional',
     education: 'Eletricidade',
     location: 'DOT',
-    department: 'Departamento de Operações e Transitio',
+    department: 'Departamento de Operações e Trânsito',
     status: 'Ativo'
   },
 {
@@ -1018,7 +1018,7 @@ const employees = [
     category: 'Técnica Superior N1',
     education: 'Arquitetura',
     location: 'DOT',
-    department: 'Departamento de Operação e Trânsito',
+    department: 'Departamento de Operações e Trânsito',
     status: 'Ativo'
   }
   
