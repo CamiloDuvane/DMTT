@@ -992,7 +992,7 @@ const employees = [
     id: 22,
     name: 'Gilda Francisco Zimba',
     photo: 'camiloduvane.jpg',
-    position: 'Técnica',
+    position: 'Fiscal',
     category: 'Técnica Supervisores N1',
     education: 'Gestão de Recursos Humanos',
     location: 'Fiscalização',
@@ -1020,8 +1020,73 @@ const employees = [
     location: 'DOT',
     department: 'Departamento de Operações e Trânsito',
     status: 'Ativo'
+  }, 
+  {
+    id: 25,
+    name: 'Adérito Quefasse Canhavato',
+    photo: 'camiloduvane.jpg',
+    position: 'Técnico',
+    category: 'Técnico',
+    education: '12° Classe',
+    location: 'Secretaria',
+    department: 'Secretaria',
+    status: 'Ativo'
+  }, 
+  {
+    id: 26,
+    name: 'José Joaquim Madlante',
+    photo: 'camiloduvane.jpg',
+    position: 'Técnico',
+    category: 'Técnica Superior N1',
+    education: 'Engenheiro',
+    location: 'DOT',
+    department: 'Departamento de Operações e Trânsito',
+    status: 'Ativo'
+  }, 
+  {
+    id: 27,
+    name: 'Catarina Armando Chicuava',
+    photo: 'camiloduvane.jpg',
+    position: 'Técnica',
+    category: 'Técnica Superior N1',
+    education: 'Economia',
+    location: 'DOT',
+    department: 'Departamento de Operações e Trânsito',
+    status: 'Ativo'
+  }, 
+  {
+      id: 28,
+    name: 'Ivete Salvador Muxanga',
+    photo: 'camiloduvane.jpg',
+    position: 'Fiscal',
+    category: 'Técnica Superior N1',
+    education: 'Gestão de Recursos Humanos',
+    location: 'Fiscalização',
+    department: 'Departamento de Operações e Trânsito',
+    status: 'Ativo'
+  }, 
+  {
+    id: 29,
+    name: 'Hernane Alfredo Cumbana',
+    photo: 'camiloduvane.jpg',
+    position: 'Fiscal',
+    category: 'Técnico Profissional',
+    education: 'Gestão de Transportes',
+    location: 'Fiscalização',
+    department: 'Departamento de Operações e Trânsito',
+    status: 'Ativo'
+  }, 
+  {
+     id: 30,
+    name: 'Aníbal António Nhacuongo',
+    photo: 'camiloduvane.jpg',
+    position: 'Auxiliar',
+    category: 'Assistente Técnico',
+    education: '10° Classe',
+    location: 'DOT',
+    department: 'Departamento de Operações e Trânsito',
+    status: 'Ativo'
   }
-  
 ];
 
 function renderEmployees(filteredEmployees = employees) {
