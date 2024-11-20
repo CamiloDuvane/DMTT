@@ -879,7 +879,52 @@ const employees = [
   },
   {
     id: 12,
-    name: 'Nome',
+    name: 'Loide Atalia da Sílvia Massangaie Castelo David',
+    photo: 'camiloduvane.jpg',
+    position: 'Directora Adjunta',
+    category: 'Supervisor N1',
+    education: 'Engenharia Civil',
+    location: 'Direcção',
+    department: 'Direcção',
+    status: 'Inativo'
+  },
+
+{
+    id: 13,
+    name: 'Obadias José Djedje',
+    photo: 'camiloduvane.jpg',
+    position: 'Coordenador',
+    category: 'Supervisor N1',
+    education: 'Engenheiro de Transportes',
+    location: 'Secretaria',
+    department: 'Direcção',
+    status: 'Inativo'
+  },
+{
+    id: 14,
+    name: 'Pedro Luís Jamal',
+    photo: 'camiloduvane.jpg',
+    position: 'Técnico',
+    category: 'Supervisor N1',
+    education: 'Engenheiro Civil',
+    location: 'BRT',
+    department: 'BRT',
+    status: 'Ativo'
+  },
+{
+    id: 15,
+    name: 'Sara Ernesto Macaringue',
+    photo: 'camiloduvane.jpg',
+    position: 'Técnica',
+    category: 'Supervisor N1',
+    education: 'Engenheira Civil',
+    location: 'BRT',
+    department: 'BRT',
+    status: 'Ativo'
+  },
+{
+    id: 16,
+    name: 'Leonilde da Victoria José Chitofo',
     photo: 'camiloduvane.jpg',
     position: 'Chefe da Secretaria',
     category: 'Supervisor N1',
@@ -888,6 +933,7 @@ const employees = [
     department: 'Departamento de Administração e Recursos Humanos',
     status: 'Ativo'
   },
+
 
   
 ];
