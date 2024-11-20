@@ -552,7 +552,9 @@ body {
       <option value="Departamento de Licenciamento">DL</option>
       <option value="Departamento de Operações e Transitio">DOT</option>
       <option value="Departamento de Transportes Público">DTP</option>
-      <option value="Secretaria">Secretaria</option>
+      <option value="Secretaria">Secretaria</option>  
+      <option
+value="BRT">BRT</option>
     </select>
     <select id="statusFilter">
       <option value="">Todos os Status</option>
