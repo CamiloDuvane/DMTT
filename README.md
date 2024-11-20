@@ -550,7 +550,7 @@ body {
       <option value="Direcção">Direcção</option>
       <option value="Departamento de Administração e Recursos Humanos">DARHF</option>
       <option value="Departamento de Licenciamento">DL</option>
-      <option value="Departamento de Operações e Transitio">DOT</option>
+      <option value="Departamento de Operações e Trânsito">DOT</option>
       <option value="Departamento de Transportes Público">DTP</option>
       <option value="Secretaria">Secretaria</option>
     </select>
