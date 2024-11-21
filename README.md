@@ -456,6 +456,75 @@ body {
   margin-top: 10px;
   line-height: 1.6;
 }
+
+/* Add styles for services section */
+.servicos-section {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--light);
+  z-index: 1000;
+  padding: 2rem;
+  overflow-y: auto;
+}
+
+.servicos-section.active {
+  display: block;
+}
+
+.servicos-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.servicos-container h2 {
+  text-align: center;
+  color: var(--primary);
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.servicos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.servico-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.servico-card:hover {
+  transform: translateY(-5px);
+}
+
+.servico-card h3 {
+  color: var(--primary);
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+}
+
+.servico-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.servico-card ul li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.servico-card ul li:last-child {
+  border-bottom: none;
+}
 </style>
 </head>
 <body>
@@ -560,8 +629,6 @@ body {
       <option value="Ativo">Ativo</option>
       <option value="Inativo">Inativo</option>
       <option value="Ferias">De Férias</option>
-
-
     </select>
   </div>
 
@@ -678,6 +745,60 @@ body {
   </div>
 </div>
 
+<div id="servicosSection" class="servicos-section">
+  <button class="back-button" onclick="hideServicos()">← Voltar</button>
+  
+  <div class="servicos-container">
+    <h2>Nossos Serviços</h2>
+    
+    <div class="servicos-grid">
+      <div class="servico-card">
+        <h3>Licenciamento de Veículos</h3>
+        <ul>
+          <li>Primeira matrícula</li>
+          <li>Renovação de licença</li>
+          <li>Transferência de propriedade</li>
+          <li>Alteração de características</li>
+          <li>Segunda via de documentos</li>
+        </ul>
+      </div>
+
+      <div class="servico-card">
+        <h3>Transportes Públicos</h3>
+        <ul>
+          <li>Licenciamento de operadores</li>
+          <li>Autorização de rotas</li>
+          <li>Vistoria de veículos</li>
+          <li>Gestão de terminais</li>
+          <li>Fiscalização de serviços</li>
+        </ul>
+      </div>
+
+      <div class="servico-card">
+        <h3>Gestão de Trânsito</h3>
+        <ul>
+          <li>Sinalização viária</li>
+          <li>Fiscalização de trânsito</li>
+          <li>Educação no trânsito</li>
+          <li>Estudos de tráfego</li>
+          <li>Gestão semafórica</li>
+        </ul>
+      </div>
+
+      <div class="servico-card">
+        <h3>Atendimento ao Público</h3>
+        <ul>
+          <li>Reclamações</li>
+          <li>Sugestões</li>
+          <li>Consulta de processos</li>
+          <li>Informações gerais</li>
+          <li>Agendamento de serviços</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
 <footer class="footer">
   <p>© 2024 Direção Municipal de Transportes e Trânsito - Todos os direitos reservados</p>
   <div class="social-links">
@@ -747,6 +868,24 @@ function hideOrg() {
 document.querySelector('a[href="https://camiloduvane.github.io/Orgranograma/"]').addEventListener('click', function(e) {
   e.preventDefault();
   showOrg();
+});
+
+// Function to show services section
+function showServicos() {
+  document.getElementById('servicosSection').classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+
+// Function to hide services section
+function hideServicos() {
+  document.getElementById('servicosSection').classList.remove('active');
+  document.body.style.overflow = 'auto';
+}
+
+// Add this event listener to show services section
+document.querySelector('.dropdown-content a[href="https://dmtt.gov.br/servicos"]').addEventListener('click', function(e) {
+  e.preventDefault();
+  showServicos();
 });
 
 // Add the showDetails function from original code
