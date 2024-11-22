@@ -617,7 +617,7 @@ body {
       <option value="">Todos os Departamentos</option>
       <option value="Vereação">Vereação</option>
       <option value="Direcção">Direcção</option>
-      <option value="Departamento de Administração e Recursos Humanos">DARHF</option>
+      <option value="Departamento de Administração e Recursos Humanos e Finanças">DARHF</option>
       <option value="Departamento de Licenciamento">DL</option>
       <option value="Departamento de Operações e Trânsito">DOT</option>
       <option value="Departamento de Transportes Público">DTP</option>
@@ -1147,7 +1147,7 @@ const employees = [
     category: 'Técnica Superior N1',
     education: 'Gestão de Recursos Humanos',
     location: 'Secretária',
-    department: 'Departamento de Administração e Recursos Humanos e Finanças',
+    department: 'Secretária',
     status: 'Ativo'
   },
   {
