@@ -1240,11 +1240,22 @@ const employees = [
   },
   {
      id: 32,
-    name: 'Alice Palmira Samuel Sindane Sitoe',
+    name: 'Teresa Samuel Cuambe',
     photo: 'camiloduvane.jpg',
     position: 'Técnica',
     category: 'Técnica Superior N1',
-    education: 'Direito',
+    education: 'Economia',
+    location: 'DTP',
+    department: 'Departamento de Transportes Público',
+    status: 'Ativo'
+  },
+  {
+     id: 50,
+    name: 'Dulce Silvino Nunes da Silva ',
+    photo: 'camiloduvane.jpg',
+    position: 'Técnica',
+    category: 'Técnica Superior N1',
+    education: 'Gestão de Recursos Humanos',
     location: 'DTP',
     department: 'Departamento de Transportes Público',
     status: 'Ativo'
