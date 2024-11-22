@@ -926,7 +926,7 @@ const employees = [
     category: 'Técnico Profissional',
     education: 'Contabilidade e Finanças',
     location: 'DARHF',
-    department: 'Departamento de Administração e Recursos Humanos',
+    department: 'Departamento de Administração e Recursos Humanos e Finanças',
     status: 'Ativo'
   },
   {
@@ -970,7 +970,7 @@ const employees = [
     category: 'Técnico Supervisor N1',
     education: 'Gestão e Políticas Públicas',
     location: 'DARHF',
-    department: 'Departamento de Administração e Recursos Humanos',
+    department: 'Departamento de Administração e Recursos Humanos e Finanças',
     status: 'Ativo'
   },
   {
@@ -1003,7 +1003,7 @@ const employees = [
     category: 'Técnica Profissional',
     education: 'Administração Pública',
     location: 'Secretaria',
-    department: 'Departamento de Administração e Recursos Humanos',
+    department: 'Departamento de Administração e Recursos Humanos e Finanças',
     status: 'Ativo'
   },
   {
@@ -1014,7 +1014,7 @@ const employees = [
     category: 'Técnico Supervisor N1',
     education: 'Contabilidade e Auditoria',
     location: 'DARHF',
-    department: 'Departamento de Administração e Recursos Humanos',
+    department: 'Departamento de Administração e Recursos Humanos e Finanças',
     status: 'Ativo'
   },
   {
@@ -1070,7 +1070,7 @@ const employees = [
     category: 'Técnica Supervisor N1',
     education: 'Contabilidade e Auditoria',
     location: 'DARHF',
-    department: 'Departamento de Administração e Recursos Humanos',
+    department: 'Departamento de Administração e Recursos Humanos e Finanças',
     status: 'Ativo'
   },
 {
@@ -1081,7 +1081,7 @@ const employees = [
     category: 'Técnica Supervisor N1',
     education: 'Contabilidade e Auditoria',
     location: 'DARHF',
-    department: 'Departamento de Administração e Recursos Humanos',
+    department: 'Departamento de Administração e Recursos Humanos e Finanças',
     status: 'Ativo'
   },
 {
@@ -1092,7 +1092,7 @@ const employees = [
     category: 'Técnica Supervisor N1',
     education: 'Gestão e Políticas Públicas',
     location: 'DARHF', 
-    department: 'Departamento de Administração e Recursos Humanos',
+    department: 'Departamento de Administração e Recursos Humanos e Finanças',
     status: 'Inativo'
   },
 {
@@ -1103,7 +1103,7 @@ const employees = [
     category: 'Técnica Profissional',
     education: 'Contabilidade e Gestão',
     location: 'DARHF',
-    department: 'Departamento de Administração e Recursos Humanos',
+    department: 'Departamento de Administração e Recursos Humanos e Finanças',
     status: 'Ativo'
   },
   {
@@ -1114,7 +1114,7 @@ const employees = [
     category: 'Assistente Técnico',
     education: '10° Classe',
     location: 'DARHF',
-    department: 'Departamento de Administração e Recursos Humanos',
+    department: 'Departamento de Administração e Recursos Humanos e Finanças',
     status: 'Ativo'
   },
   {
@@ -1125,7 +1125,7 @@ const employees = [
     category: 'Auxiliar',
     education: '7° Classe',
     location: 'DARHF',
-    department: 'Departamento de Administração e Recursos Humanos',
+    department: 'Departamento de Administração e Recursos Humanos e Finanças',
     status: 'Ativo'
   },
   {
@@ -1147,7 +1147,7 @@ const employees = [
     category: 'Técnica Superior N1',
     education: 'Gestão de Recursos Humanos',
     location: 'Secretária',
-    department: 'Departamento de Administração e Recursos Humanos',
+    department: 'Departamento de Administração e Recursos Humanos e Finanças',
     status: 'Ativo'
   },
   {
@@ -1226,7 +1226,84 @@ const employees = [
     location: 'DOT',
     department: 'Departamento de Operações e Trânsito',
     status: 'Ativo'
-  }
+  },
+  {
+     id: 31,
+    name: 'Alice Palmira Samuel Sindane Sitoe',
+    photo: 'camiloduvane.jpg',
+    position: 'Técnico',
+    category: 'Técnico Superior N1',
+    education: 'Direito',
+    location: 'DTP',
+    department: 'Departamento de Transportes Públicos',
+    status: 'Ativo'
+  },
+  {
+     id: 32,
+    name: 'Alice Palmira Samuel Sindane Sitoe',
+    photo: 'camiloduvane.jpg',
+    position: 'Técnica',
+    category: 'Técnica Superior N1',
+    education: 'Direito',
+    location: 'DTP',
+    department: 'Departamento de Transportes Públicos',
+    status: 'Ativo'
+  },
+   {
+     id: 33,
+    name: 'Leonilde da Victoria José Chitofo',
+    photo: 'camiloduvane.jpg',
+    position: 'Técnica',
+    category: 'Técnica Superior N1',
+    education: 'Contabilidade e Auditoria',
+    location: 'DARHF',
+    department: 'Departamento de Administração de Recursos Humanos e Finanças',
+    status: 'Ativo'
+  },
+ {
+     id: 34,
+    name: 'Henriqueta Muchanga Buque',
+    photo: 'camiloduvane.jpg',
+    position: 'Técnica',
+    category: 'Técnica profissional',
+    education: 'Contabilidade',
+    location: 'Secretaria',
+    department: 'Secretaria',
+    status: 'Ativo'
+  },
+  {
+     id: 35,
+    name: 'Catarina Armando Chicuava',
+    photo: 'camiloduvane.jpg',
+    position: 'Técnica',
+    category: 'Técnica Super N1',
+    education: 'Economia',
+    location: 'DOT',
+    department: 'Departamento de Administração de Recursos Humanos e Finanças',
+    status: 'Ativo'
+  },
+   {
+     id: 36,
+    name: 'Iva carla Uamusse',
+    photo: 'camiloduvane.jpg',
+    position: 'Técnica',
+    category: 'Técnica',
+    education: 'Nível Médio - 12ª Classe',
+    location: 'Secretaria',
+    department: 'Secretaria',
+    status: 'Ativo'
+  },
+  {
+     id: 37,
+    name: 'Alberto Luís Jarra',
+    photo: 'camiloduvane.jpg',
+    position: 'Técnico',
+    category: 'Técnico Profissional',
+    education: 'Administração Pública',
+    location: 'DARHF',
+    department: 'Departamento de Administração de Recursos Humanos e Finanças',
+    status: 'Ativo'
+  },
 ];
 
 function renderEmployees(filteredEmployees = employees) {
