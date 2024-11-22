@@ -1235,7 +1235,7 @@ const employees = [
     category: 'Técnico Superior N1',
     education: 'Direito',
     location: 'DTP',
-    department: 'Departamento de Transportes Públicos',
+    department: 'Departamento de Transportes Público',
     status: 'Ativo'
   },
   {
@@ -1246,7 +1246,7 @@ const employees = [
     category: 'Técnica Superior N1',
     education: 'Direito',
     location: 'DTP',
-    department: 'Departamento de Transportes Públicos',
+    department: 'Departamento de Transportes Público',
     status: 'Ativo'
   },
    {
@@ -1422,7 +1422,7 @@ const employees = [
     category: 'Técnico Profissional',
     education: 'Administração Pública',
     location: 'DTP',
-    department: 'Departamento de Transportes Públicos',
+    department: 'Departamento de Transportes Público',
     status: 'Ativo'
   },
 {
