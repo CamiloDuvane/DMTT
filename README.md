@@ -1304,6 +1304,139 @@ const employees = [
     department: 'Departamento de Administração de Recursos Humanos e Finanças',
     status: 'Ativo'
   },
+  {
+     id: 38,
+    name: 'Candido Agostinho Mponda',
+    photo: 'camiloduvane.jpg',
+    position: 'Auxiliar Administrativo',
+    category: 'Motorista',
+    education: '7º Classe',
+    location: 'DARHF',
+    department: 'Departamento de Administração de Recursos Humanos e Finanças',
+    status: 'Ativo'
+  },
+   {
+     id: 39,
+    name: 'Assa Liocadia Tito Sabonete',
+    photo: 'camiloduvane.jpg',
+    position: 'Técnica',
+    category: 'Técnica',
+    education: '12º Classe',
+    location: 'DARHF',
+    department: 'Departamento de Administração de Recursos Humanos e Finanças',
+    status: 'Ativo'
+  },
+  {
+     id: 40,
+    name: 'José Joaquim Madlante',
+    photo: 'camiloduvane.jpg',
+    position: 'Técnico',
+    category: 'Técnico Superior N1',
+    education: 'Enginheiro',
+    location: 'DOT',
+    department: 'Departamento de Operações e Trânsito',
+    status: 'Ativo'
+  },
+  {
+     id: 41,
+    name: 'Ilídio Francisco Miso',
+    photo: 'camiloduvane.jpg',
+    position: 'Técnico',
+    category: 'Técnico Superior N1',
+    education: 'Enginheiro Informático',
+    location: 'DL',
+    department: 'Departamento de Licenciamento',
+    status: 'Ativo'
+  },
+   {
+     id: 42,
+    name: 'Hernane Alfredo Cumbane',
+    photo: 'camiloduvane.jpg',
+    position: 'Técnico',
+    category: 'Técnico Profissional',
+    education: 'Gestão de Transportes',
+    location: 'DOT',
+    department: 'Departamento de Operações e Trânsito',
+    status: 'Ativo'
+  },
+  {
+     id: 43,
+    name: 'Arginália Charles Bila',
+    photo: 'camiloduvane.jpg',
+    position: 'Técnica',
+    category: 'Técnica Profissional',
+    education: 'Administração Pública',
+    location: 'Secretaria',
+    department: 'Secretaria',
+    status: 'Ativo'
+  },
+   {
+     id: 44,
+    name: 'Rosália da Glória Rafael',
+    photo: 'camiloduvane.jpg',
+    position: 'Técnica',
+    category: 'Técnica Superior N1',
+    education: 'Administração Pública',
+    location: 'DARHF',
+    department: 'Departamento de Administração de Recursos Humanos e Finanças',
+    status: 'Ativo'
+  },
+  {
+     id: 45,
+    name: 'Gilda Francisco Zimba',
+    photo: 'camiloduvane.jpg',
+    position: 'Técnica',
+    category: 'Técnica Superior N1',
+    education: 'Gestão de Recursos Humanos',
+    location: 'DOT',
+    department: 'Departamento de Operações e Trânsito',
+    status: 'Ativo'
+  },
+   {
+     id: 46,
+    name: 'Ivete Salvador Muxanga',
+    photo: 'camiloduvane.jpg',
+    position: 'Técnica',
+    category: 'Técnica Superior N1',
+    education: 'Gestão de Recursos Humanos',
+    location: 'DOT',
+    department: 'Departamento de Operações e Trânsito',
+    status: 'Ativo'
+  },
+   {
+     id: 47,
+    name: 'Helena da Clara Tito',
+    photo: 'camiloduvane.jpg',
+    position: 'Técnica',
+    category: 'Técnica Superior N1',
+    education: 'Arquiteta',
+    location: 'DOT',
+    department: 'Departamento de Operações e Trânsito',
+    status: 'Ativo'
+  },
+  {
+     id: 48,
+    name: 'Hercílio Adriano Chivangue',
+    photo: 'camiloduvane.jpg',
+    position: 'Técnico',
+    category: 'Técnico Profissional',
+    education: 'Administração Pública',
+    location: 'DTP',
+    department: 'Departamento de Transportes Públicos',
+    status: 'Ativo'
+  },
+{
+     id: 49,
+    name: 'Felicidade Francisco Macamo',
+    photo: 'camiloduvane.jpg',
+    position: 'Técnica',
+    category: 'Técnica Superior N1',
+    education: 'Contabilidade e Auditoria',
+    location: 'DARHF',
+    department: 'Departamento de Administração de Recursos Humanos e Finanças',
+    status: 'Ativo'
+  },
+
 ];
 
 function renderEmployees(filteredEmployees = employees) {
