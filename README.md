@@ -1408,7 +1408,7 @@ function showLicensingSystem() {
             <option value="baixa_zimpecto">Baixa-Zimpecto</option>
             <option value="baixa_combatentes">Baixa P.Combatentes</option>
             <option value="baixa_laulane">Baixa-Laulane</option>
-            <option value="ba_voador_malhazine">BA.voador-Malhazine</option>
+            <option value="a_voador_malhazine">A.voador-Malhazine</option>
           </select>
         </div>
 
@@ -1635,7 +1635,7 @@ function generateLicense() {
         } else {
             return `
                 <div class="license-back">
-                    <div class="watermark"><img src="DMTT.bmp" alt="Logotipo do Município" width="35" height="35"></div>
+                    <div class="watermark"><img src="DMTT.bmp" alt="Logotipo do Município" width="50" height="50"></div>
                     <div class="license-type-back">
                         <h3>Licença de Transporte</h3>
                     </div>
