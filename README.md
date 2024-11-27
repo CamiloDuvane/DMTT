@@ -1691,7 +1691,7 @@ function generateLicense() {
     qrcodeDiv.innerHTML = '';
     
     new QRCode(qrcodeDiv, {
-        text: `nNúmero da Licença: ${licenseNumber}\nNome do Proprietário/Empresa: ${ownerName}\nTipo de Licença: ${licenseType}`,
+        text: `License: ${licenseNumber}\nOwner: ${ownerName}\nType: ${licenseType}`,
         width: 100,
         height: 100
     });
