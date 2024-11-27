@@ -1635,7 +1635,7 @@ function generateLicense() {
         } else {
             return `
                 <div class="license-back">
-                    <div class="watermark"><img src="DMTT.bmp" alt="Logotipo do Município" width="50" height="50"></div>
+                    <div class="watermark"><img src="DMTT.bmp" alt="Logotipo do Município" width="150" height="80"></div>
                     <div class="license-type-back">
                         <h3>Licença de Transporte</h3>
                     </div>
