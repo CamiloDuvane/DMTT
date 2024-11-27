@@ -1650,9 +1650,9 @@ function generateLicense() {
 
     const licenseTemplate = `
         <div class="a6-preview">
-            <div class="watermark"><img src="DMTT.bmp" alt="Logotipo do Município" width="15" height="15"></div>
+            <div class="watermark"><img src="DMTT.bmp" alt="Logotipo do Município" width="115" height="115"></div>
             <div class="license-header">
-                <div class="logo-placeholder"><img src="DMTT.bmp" alt="Logotipo do Município" width="150" height="150"></div>
+                <div class="logo-placeholder"><img src="DMTT.bmp" alt="Logotipo do Município" width="50" height="50"></div>
                 <div class="municipality-info">
                     <h3>MUNICÍPIO DE MAPUTO</h3>
                     <h4>CONSELHO MUNICIPAL</h4>
