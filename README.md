@@ -875,7 +875,7 @@ select:focus, input:focus {
     <div class="logo">
       <div class="logo-text">DMTT</div>
       <div class="logo-image">
-        <img alt="Logo DMTT - Direção Municipal de Transportes e Trânsito" src="DMTT.bmp" width="60" height="60">
+        <img alt="Logo DMTT - Direção Municipal de Transportes e Trânsito" src="DMTT.bmp" width="45" height="45">
       </div>
     </div>
   </nav>
@@ -1618,7 +1618,7 @@ function generateLicense() {
         if (licenseType === 'camiao') {
             return `
                 <div class="license-back">
-                    <div class="watermark"><img src="DMTT.bmp" alt="Logotipo do Município" width="15" height="15"></div>
+                    <div class="watermark"><img src="DMTT.bmp" alt="Logotipo do Município" width="115" height="115"></div>
                     <div class="license-type-back">
                         <h3>Licença de Camião</h3>
                         <div class="authorized-routes">
