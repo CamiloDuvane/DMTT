@@ -256,7 +256,15 @@ body {
 }
 
 .filters input {
+  flex: 2; /* Changed from flex: 1 to give more space to the name filter */
+  min-width: 300px; /* Add minimum width */
+  padding: 0.75rem; /* Slightly increase padding */
+  font-size: 1.1rem; /* Slightly larger font size */
+}
+
+.filters select {
   flex: 1;
+  min-width: 200px;
 }
 
 .employee-count {
@@ -537,7 +545,85 @@ body {
   color: #000000;  /* Changed from var(--primary) to black */
 }
 
-/* Add to existing CSS */
+/* Update A6 preview styles */
+.a6-preview, .license-back {
+    background: white;
+    margin: 20px auto;
+    padding: 10mm;
+    position: relative;
+    width: 105mm;  /* Standard A6 width */
+    height: 148mm; /* Standard A6 height */
+    font-size: 10px;
+    box-sizing: border-box;
+    border: 2px solid darkgreen;
+    outline: 2px solid #ffd700;
+    outline-offset: 2px;
+    box-shadow: 0 0 0 6px darkred;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Update print styles */
+@media print {
+    body * {
+        visibility: hidden;
+    }
+    
+    .a6-preview, .license-back {
+        visibility: visible;
+        position: absolute;
+        left: 1.5mm;
+        top: 1.5mm;
+        width: 93mm;  /* A6 width minus margins */
+        height: 136mm; /* A6 height minus margins */
+        margin: 0;
+        padding: 10mm;
+        border: 2px solid darkgreen !important;
+        outline: 2px solid #ffd700 !important;
+        outline-offset: 2px !important;
+        box-shadow: 0 0 0 6px darkred !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    .license-back {
+        position: absolute;
+        top: 280mm; /* Position the back side on next page */
+        page-break-before: always;
+    }
+}
+
+/* Optimize content spacing */
+.license-header {
+    margin-bottom: 5px;
+}
+
+.municipality-info {
+    margin-bottom: 5px;
+}
+
+.license-details {
+    flex-grow: 1;
+    font-size: 10px;
+    line-height: 1.3;
+}
+
+.license-details p {
+    margin: 3px 0;
+}
+
+.signature-section {
+    margin-top: auto;
+    margin-bottom: 10px;
+}
+
+/* Adjust signature elements */
+.signature-section p {
+    margin: 2px 0;
+    font-size: 10px;
+}
+
+/* Add this to existing CSS */
 .license-form {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -584,42 +670,6 @@ select:focus, input:focus {
   margin-top: 20px;
   padding: 20px;
   border: 1px dashed #ddd;
-}
-
-/* Add to existing CSS */
-.a6-preview {
-    background: white;
-    margin: 20px auto;
-    padding: 10mm;
-    position: relative;
-    width: 105mm;  /* Standard A6 width */
-    height: 148mm; /* Standard A6 height */
-    font-size: 10px;
-    box-sizing: border-box;
-    border: 2px solid darkgreen;
-    outline: 2px solid #ffd700;
-    outline-offset: 2px;
-    box-shadow: 0 0 0 6px darkred;
-    display: flex;
-    flex-direction: column;
-}
-
-.license-back {
-    page-break-before: always;
-    background: white;
-    margin: 20px auto;
-    padding: 10mm;
-    position: relative;
-    width: 105mm;  /* Standard A6 width */
-    height: 148mm; /* Standard A6 height */
-    font-size: 10px;
-    box-sizing: border-box;
-    border: 2px solid darkgreen;
-    outline: 2px solid #ffd700;
-    outline-offset: 2px;
-    box-shadow: 0 0 0 6px darkred;
-    display: flex;
-    flex-direction: column;
 }
 
 /* Update print styles */
@@ -1647,6 +1697,11 @@ function generateLicense() {
     });
 }
 
+// Update print function
+function printLicense() {
+    window.print();
+}
+
 // Adiciona comportamento de scroll suave aos links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
@@ -2325,6 +2380,62 @@ function showColectivo() {
             <td>Revisão das rotas existentes</td>
             <td>30/06/2024</td>
             <td style="color: green;">Em Andamento</td>
+          </tr>
+          <tr>
+            <td style="padding: 1rem; border: 1px solid #ddd;">002</td>
+            <td>Ana Santos</td>
+            <td>Fiscalização</td>
+            <td>Inspeção de terminais</td>
+            <td>15/07/2024</td>
+            <td style="color: orange;">Pendente</td>
+          </tr>
+          <tr>
+            <td style="padding: 1rem; border: 1px solid #ddd;">003</td>
+            <td>Pedro Costa</td>
+            <td>Manutenção</td>
+            <td>Reparação de semáforos</td>
+            <td>20/07/2024</td>
+            <td style="color: green;">Em Andamento</td>
+          </tr>
+          <tr>
+            <td style="padding: 1rem; border: 1px solid #ddd;">004</td>
+            <td>Maria Luisa</td>
+            <td>Documentação</td>
+            <td>Atualização de registros</td>
+            <td>25/07/2024</td>
+            <td style="color: red;">Atrasado</td>
+          </tr>
+          <tr>
+            <td style="padding: 1rem; border: 1px solid #ddd;">005</td>
+            <td>João Paulo</td>
+            <td>Treinamento</td>
+            <td>Capacitação de fiscais</td>
+            <td>01/08/2024</td>
+            <td style="color: green;">Em Andamento</td>
+          </tr>
+          <tr>
+            <td style="padding: 1rem; border: 1px solid #ddd;">006</td>
+            <td>Sofia Lima</td>
+            <td>Planejamento</td>
+            <td>Definição de novas rotas</td>
+            <td>10/08/2024</td>
+            <td style="color: orange;">Pendente</td>
+          </tr>
+          <tr>
+            <td style="padding: 1rem; border: 1px solid #ddd;">007</td>
+            <td>Lucas Mendes</td>
+            <td>Manutenção</td>
+            <td>Pintura de faixas</td>
+            <td>15/08/2024</td>
+            <td style="color: green;">Em Andamento</td>
+          </tr>
+          <tr>
+            <td style="padding: 1rem; border: 1px solid #ddd;">008</td>
+            <td>Clara Oliveira</td>
+            <td>Fiscalização</td>
+            <td>Vistoria de veículos</td>
+            <td>20/08/2024</td>
+            <td style="color: orange;">Pendente</td>
           </tr>
         </tbody>
       </table>
