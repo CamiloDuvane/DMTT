@@ -2375,50 +2375,50 @@ function showColectivo() {
         <tbody>
           <tr>
             <td style="padding: 1rem; border: 1px solid #ddd;">001</td>
-            <td>Carlos Silva</td>
-            <td>Manutenção de Rotas</td>
-            <td>Revisão das rotas existentes</td>
-            <td>30/06/2024</td>
+            <td>Fernando Uane</td>
+            <td>Projecto BRT</td>
+            <td>Revisão da aprovação das vias</td>
+            <td>30/06/2025</td>
             <td style="color: green;">Em Andamento</td>
           </tr>
           <tr>
             <td style="padding: 1rem; border: 1px solid #ddd;">002</td>
-            <td>Ana Santos</td>
-            <td>Fiscalização</td>
-            <td>Inspeção de terminais</td>
-            <td>15/07/2024</td>
+            <td>Nelson Massango</td>
+            <td>Cordenação entre os Departamentos</td>
+            <td>Criar um clima saudavel para o trabalho</td>
+            <td>15/07/2025</td>
             <td style="color: orange;">Pendente</td>
           </tr>
           <tr>
             <td style="padding: 1rem; border: 1px solid #ddd;">003</td>
-            <td>Pedro Costa</td>
-            <td>Manutenção</td>
-            <td>Reparação de semáforos</td>
-            <td>20/07/2024</td>
+            <td>Carlos Vilanculos</td>
+            <td>Pagamento de todas as facturas</td>
+            <td>Apresentar os comprovativos de pagamento de todas as facturas em nome da direcção</td>
+            <td>20/07/2025</td>
             <td style="color: green;">Em Andamento</td>
           </tr>
           <tr>
             <td style="padding: 1rem; border: 1px solid #ddd;">004</td>
-            <td>Maria Luisa</td>
-            <td>Documentação</td>
-            <td>Atualização de registros</td>
+            <td>Vasco Nhaquila</td>
+            <td>Cordenar com os Transportadores para garantir o Transporte</td>
+            <td>Mostras as rotas preechidas e as vazias</td>
             <td>25/07/2024</td>
             <td style="color: red;">Atrasado</td>
           </tr>
           <tr>
             <td style="padding: 1rem; border: 1px solid #ddd;">005</td>
-            <td>João Paulo</td>
-            <td>Treinamento</td>
+            <td>Amilton Tembe</td>
+            <td>Emitir licenças a todos os operadores na Cidade de Maputo</td>
             <td>Capacitação de fiscais</td>
-            <td>01/08/2024</td>
+            <td>01/08/2025</td>
             <td style="color: green;">Em Andamento</td>
           </tr>
           <tr>
             <td style="padding: 1rem; border: 1px solid #ddd;">006</td>
-            <td>Sofia Lima</td>
-            <td>Planejamento</td>
-            <td>Definição de novas rotas</td>
-            <td>10/08/2024</td>
+            <td>Baltazar Hilario</td>
+            <td>garantir o funcionamento pleno dos Semafos da Cidade</td>
+            <td>Definição de novos modelos de Semaforos na cidade de Maputo</td>
+            <td>10/08/2025</td>
             <td style="color: orange;">Pendente</td>
           </tr>
           <tr>
@@ -2431,9 +2431,9 @@ function showColectivo() {
           </tr>
           <tr>
             <td style="padding: 1rem; border: 1px solid #ddd;">008</td>
-            <td>Clara Oliveira</td>
+            <td>Safo Mahumana</td>
             <td>Fiscalização</td>
-            <td>Vistoria de veículos</td>
+            <td>Garantir o pagamento de todos os subsidios, bonos e gratificações</td>
             <td>20/08/2024</td>
             <td style="color: orange;">Pendente</td>
           </tr>
@@ -2475,8 +2475,8 @@ function showContato() {
           <p>📞 +258 21 XXX XXX</p>
           
           <h3>Reclamações</h3>
-          <p>📱 +258 84 XXX XXXX</p>
-          <p>📧 reclamacoes@dmtt.gov.mz</p>
+          <p>📱 +258 84 247 9404</p>
+          <p>📧 camilowilliam0@gmail.com</p>
           
           <h3>Email Geral</h3>
           <p>📧 info@dmtt.gov.mz</p>
